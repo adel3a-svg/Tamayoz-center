@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>مركز التميز التعليمي</title>
+
+<style>
+body {
+    font-family: Tahoma, Arial;
+    background: linear-gradient(#fdeff9, #ecf0ff);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 430px;
+    margin: 25px auto;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #7b2cbf;
+}
+
+.highlight {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.card {
+    background: #f3f0ff;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.button {
+    display: block;
+    background: #7b2cbf;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    border: 0;
+    margin-top: 10px;
+}
+
+.footer {
+    font-size: 14px;
+    color: #777;
+    margin-top: 15px;
+}
+</style>
+
+<script>
+function sendWhatsApp() {
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+    var phone = document.getElementById("phone").value;
+
+    var text = "تسجيل طالبة جديدة:%0A"
+             + "الاسم: " + name + "%0A"
+             + "العمر: " + age + "%0A"
+             + "رقم ولي الأمر: " + phone;
+
+    window.open("https://wa.me/966XXXXXXXXX?text=" + text, "_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎓 مركز التميز التعليمي</h1>
+<p class="highlight">تعليم اللغة الإنجليزية للبنات</p>
+
+<div class="image">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="تعليم الأطفال">
+</div>
+
+<div class="card">
+👧 المرحلة الابتدائية<br><br>
+🗓 الأحد – الاثنين – الثلاثاء<br><br>
+💰 الرسوم: <b>250 ريال شهريًا</b><br><br>
+👩‍🏫 مدربة بخبرة في المدارس العالمية
+</div>
+
+<p>✨ نزرع الثقة… ونبني مستقبلًا لغويًا مميزًا ✨</p>
+
+<!-- ===== نموذج التسجيل ===== -->
+<h3>📝 تسجيل الطالبة</h3>
+
+<input type="text" id="name" placeholder="اسم الطالبة">
+<input type="number" id="age" placeholder="عمر الطالبة">
+<input type="tel" id="phone" placeholder="رقم ولي الأمر">
+
+<a class="button whatsapp" onclick="sendWhatsApp()">إرسال التسجيل عبر واتساب</a>
+
+<!-- ===== الخريطة ===== -->
+<h3>📍 موقع المركز</h3>
+
+<iframe 
+src="https://www.google.com/maps?q=Riyadh&output=embed">
+</iframe>
+
+<div class="footer">
+📢 التسجيل متاح الآن – المقاعد محدودة
+</div>
+
+</div>
+
+</body>
+</html>
